@@ -12,12 +12,18 @@
   @import "./styles/scss/direct-imports";
   @import "~__root/test/resources/styles/scss/direct-imports-moduleNameMapper";
   @import "~__test/resources/styles/scss/direct-imports-multiple-moduleNameMapper";
+  @import './styles/scss/scss-color-variables';
+
+  $form-input-bg: $white;
 
   .testA {
     background-color: red;
   }
   .testB {
     background-color: blue;
+  }
+  .testC {
+    background-color: $form-input-bg;
   }
 </style>
 
